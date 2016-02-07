@@ -62,5 +62,6 @@ install_npm() {
 }
 
 install_flynn() {
-  L=/usr/local/bin/flynn && curl -sSL -A "`uname -sp`" https://dl.flynn.io/cli | zcat >$L && chmod +x $L
+  mkdir -p /app/bin
+  L=/app/bin/flynn && curl -sSL -A "`uname -sp`" https://dl.flynn.io/cli | zcat >$L && chmod +x $L
 }
