@@ -92,6 +92,8 @@ install_bins() {
     install_npm "$npm_engine" "$BUILD_DIR/.heroku/node"
   fi
   warn_old_npm
+  
+  install_flynn
 }
 
 header "Installing binaries"
