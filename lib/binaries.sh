@@ -65,4 +65,5 @@ install_flynn() {
   echo "Installing Flynn CLI"
   mkdir -p /app/bin
   L=/app/bin/flynn && curl -sSL -A "`uname -sp`" https://dl.flynn.io/cli | zcat >$L && chmod +x $L
+  echo "Installing Flynn CLI SUCCESSFUL"
 }
